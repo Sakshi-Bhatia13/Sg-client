@@ -126,7 +126,7 @@ function Jewellery() {
        <div className='jewellery-Products '>
 
       <div className="jewellery-product-card">
-      <img className='jewellery-product-image' src={im2} alt=''></img>
+      <img className='jewellery-product-image' src={im7} alt=''></img>
       <div className="heart-container" title="Like">
             <input
               type="checkbox"
