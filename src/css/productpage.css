@@ -1,0 +1,151 @@
+.pp-product-page {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    padding: 3rem 7rem;
+    background-color: white;
+   
+}
+
+.pp-width{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    max-width: 70rem;
+}
+
+.pp-product-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    padding: 1.25rem;
+    margin: 1rem;
+    margin-left: 3rem;
+    width: 40%;
+    height: 50vh;
+    
+}
+
+.pp-product-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.625rem;
+}
+
+.p-des {
+    margin-top: 0.625rem;
+}
+
+.pt{
+    margin-top: 0;
+}
+
+.add-to-cart-button {
+    width: 50%;
+    margin-top: 1.25rem;
+    margin-left: 0;
+    padding: 0.625rem 1.25rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add-to-cart-button:hover {
+    background-color: #0056b3;
+}
+
+.pp-product-images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.25rem;
+    width: 60%;
+}
+
+
+.main-product-img-grid {
+    width: 100%; 
+    max-height: 25rem; 
+    object-fit: cover;
+}
+.main-product-img-grid:hover{
+    cursor: pointer;
+   
+    transform: scale(1.05, 1.05);
+    transition: ease 1s;
+
+
+}
+
+.product-image-grid {
+display: grid;
+grid-template-columns: 1fr 1fr;
+justify-content: center;
+align-items: center;
+    gap: 0.825rem;
+    margin-top: 1.25rem; 
+ 
+    overflow: hidden;
+}
+
+.product-image-grid img {
+    width: 15rem; 
+}
+.product-image-grid img:hover{
+    cursor: pointer;
+   
+    transform: scale(1.05, 1.05);
+
+}
+
+
+.recently-viewed {
+    margin-top: 2.5rem;
+}
+
+.recent-items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem; 
+}
+
+.pp-product-card {
+    width: calc(33.33% - 0.625rem); 
+    padding: 0.625rem;
+    border: 0.0625rem solid #ccc;
+    border-radius: 0.3125rem;
+}
+.product-line{
+    width: 15rem;
+    opacity: 0.7;
+    
+    
+    
+    border: 0.0225rem solid #625f5f;
+
+
+}
+
+.pp-product-image {
+    width: 100%;
+    height: auto;
+}
+
+
+.pp-product-details {
+    margin-top: 0.625rem;
+}
+
+.pp-product-title {
+    font-weight: bold;
+}
+
+.pp-product-description, .pp-product-weight, .pp-product-price {
+    margin-top: 0.3125rem;
+}

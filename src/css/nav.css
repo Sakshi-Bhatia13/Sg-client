@@ -1,0 +1,397 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+.navbar{
+
+    background-color: white; 
+    width: 100vw;
+    color: black;
+    box-shadow: 1px 3px 6px -1px rgba(172, 172, 172, 0.687);
+    position: fixed;
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.2s ease;
+    z-index: 100;
+    height: 12rem;
+}
+
+
+
+.logo{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: "Noto Serif", serif;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+  
+
+}
+.main-logo{
+    font-size: 3.5rem;
+    
+    text-align: center;
+    letter-spacing: 0.8rem;
+    margin-left: 0.5rem;
+    
+    font-weight: 700;
+    font-weight: bold;
+    
+
+}
+.sub-logo{
+    text-align: center;
+    font-size: 1.6rem;
+    margin-top: -25px;
+    font-family: "Noto Serif", serif;
+    letter-spacing: 0.22rem;
+    font-style: italic;
+  }
+
+
+  .navcontainer {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem; 
+  }
+
+  .navcontainer2 {
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.navelement {
+    float: left;
+    display: block;
+    color:black; 
+    text-align: center;
+    padding: 1.1rem 3rem; 
+    text-decoration: none;
+    font-size: 1.1rem;
+    
+    
+   }
+  
+  .navelement:hover {
+    cursor: pointer;
+    color: #0f76d6; 
+  }
+
+
+
+  .nav-login-section{
+    position: absolute;
+    right:  0%;
+    margin-right: 3rem;  
+  }
+  
+  .nav-login-buttons {
+    color: black;
+    background-color: white; 
+    border: none;
+    padding: 1.5rem 0.9rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin-left: 0.3rem; 
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+  }
+  
+
+
+
+.logo-2{
+  height: 3rem;
+  margin-right: 1rem;
+  margin-left: 4rem;
+}
+
+.navbar2{
+  
+  background-color: white; 
+  width: 100vw;
+  color: black;
+  box-shadow: 1px 3px 6px -1px rgba(172, 172, 172, 0.687);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  z-index: 100;
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.2s ease;
+  height: 4.5rem;
+}
+
+.emty{
+
+  height: 4.9rem;
+}
+.emty2{
+
+  height: 12rem;
+}
+
+
+.navcontainer-2 div{
+  float: left;
+  display: block;
+  color:black; 
+  text-align: center;
+  
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+.navcontainer-2{
+  
+  text-align: center; 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  padding: 0.1rem; 
+}
+
+.not-show{
+  visibility: hidden;
+  opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar {
+    height: 12rem;
+  }
+
+  .navcontainer {
+    margin-top: 0.5rem;
+    flex-direction: row;
+  }
+
+  .navelement {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .nav-login-section {
+    margin-right: 1.5rem;
+  }
+
+  .logo {
+    margin-left: 0.5rem;
+  }
+
+  .main-logo {
+    font-size: 3rem;
+    letter-spacing: 0.6rem;
+  }
+
+  .sub-logo {
+    font-size: 1.5rem;
+    margin-top: -20px;
+    letter-spacing: 0.15rem;
+  }
+
+  .logo-2 {
+    height: 2.5rem;
+    margin-right: 2rem;
+    
+  }
+
+  .navbar2 {
+    height: 6rem;
+  }
+
+  .navcontainer-2 div {
+    padding: 0.7rem 0.8rem;
+    font-size: 1rem;
+  }
+  .nav-login-buttons {
+   font-size: 1.2rem;
+    
+  }
+}
+
+
+@media screen and (max-width: 479px) {
+  .navbar {
+    height: 7rem;
+  }
+
+  .navcontainer {
+    margin-top: 0.3rem;
+  }
+
+  .navelement {
+    padding: 0.7rem 1.2rem;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+
+  .nav-login-section {
+    margin: 0;
+  }
+
+  .logo {
+    margin-left: 0.5rem;
+  }
+
+  .main-logo {
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
+  }
+
+  .sub-logo {
+    font-size: 1.2rem;
+    margin-top: -15px;
+    letter-spacing: 0.1rem;
+  }
+
+  .logo-2 {
+    height: 2rem;
+    margin-right: 2rem;
+  }
+
+  .navbar2 {
+    height: 5rem;
+  }
+
+  .navcontainer-2 div {
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+  }
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 3.5rem;
+  justify-content: center;
+  text-align: center;
+  background-color:white;
+  min-width: 12rem;
+  box-shadow: px 0.5rem 1rem rgba(0,0,0,0.2);
+  z-index: 100;
+  color: #0d172a;
+  transition: all 0.3s ease;
+  
+}
+
+
+.drop-element{
+  margin: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: px 0.5rem 1rem rgba(0,0,0,0.2);
+  
+  
+  display: flex;
+  
+}
+.drop-element:hover {
+  padding-left: 0.2rem;
+  color: grey;
+  
+  
+  
+}
+
+.nav-filter-element:hover .dropdown-content {
+  display: block;
+  box-shadow: 1px 3px 6px -1px rgb(0, 0, 0);
+ 
+}
+.nav-filter-element {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1.1rem 3rem;
+  text-decoration: none;
+  font-size: 1.1rem;
+  position: relative;
+  transition: all 0.3s ease;
+
+}
+
+.nav-filter-element:hover {
+  cursor: pointer;
+  color: #0f76d6;
+}
+.nav-active {
+  color: #0f76d6; 
+  font-weight: bold; 
+  
+}
+.nav-g-img{
+  height: 2rem;
+  width: 2rem;
+  margin-right: 2rem;
+}
+.button-clicked {
+  background-color: white;
+}
+.hamburger-menu{
+  display: none;
+}
+
+/* @media (max-width : 780px){
+  #navbar{
+    display: flex;
+    flex-direction: column;
+  }
+*/
+@media (max-width: 979px) {
+  .navcontainer {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+  .navcontainer2 {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .navbar.show .navcontainer {
+    display: flex;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    margin: 1rem ;
+    margin-top: 0;  
+  }
+  .main-logo{
+    font-size: 2.5rem;
+  }
+  .sub-logo{
+    font-size: 1.5rem;
+  }
+  .menubar{
+    display: flex;
+    flex-direction: row;
+  }
+}
+@media (max-width: 662px){
+  .main-logo{
+    font-size: 2rem;
+  }
+  .sub-logo{
+    font-size: 1.25rem;
+  }
+  .nav-login-section{
+    display: flex;
+    flex-direction: column;
+  }
+}

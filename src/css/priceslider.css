@@ -1,0 +1,56 @@
+.price-range-slider {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  width: 20rem;
+}
+
+.slider-container {
+  margin-bottom: 1rem;
+}
+
+.price-range-values {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1rem;
+  color: #666;
+}
+
+.ReactSlider {
+  width: 100%;
+  height: 2rem;
+}
+
+.ReactSlider__track {
+  background-color: #ddd;
+  height: 0.6rem;
+}
+
+.ReactSlider__track--active {
+  background-color: #007bff;
+}
+
+.ReactSlider__thumb {
+  width: 2rem;
+  height: 2rem;
+  border: 0.2rem solid #007bff;
+  background-color: #fff;
+  cursor: grab;
+  border-radius: 50%;
+}
+
+.ReactSlider__thumb:focus {
+  outline: none;
+}
+
+.ReactSlider__thumb.ReactSlider__thumb--active {
+  border-color: #0056b3;
+}
+
+.filter-element:hover .price-range-slider {
+  display: block;
+}

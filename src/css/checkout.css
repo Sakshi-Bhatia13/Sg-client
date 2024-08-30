@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+.checkout-container {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 1.25rem;
+  }
+  
+  .checkout-title {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 1.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-order-preview {
+    margin-bottom: 1.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-order-preview h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin-bottom: 0.625rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-order-items {
+    border: 0.0625rem solid #ccc;
+
+    padding: 0.625rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-order-item {
+    margin-bottom: 0.9375rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-item-name {
+    font-size: 1rem;
+    color: #555;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-item-quantity, .item-price {
+    font-size: 0.875rem;
+    color: #777;
+    margin: 0.3125rem 0;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .total-price {
+    font-size: 1.125rem;
+    color: #333;
+    margin-top: 0.9375rem;
+    font-family: 'Vollkorn', serif;
+  }
+  
+  .ch-address-formss {
+    margin-bottom: 1.25rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-address-forms input[type='text'], .address-forms textarea {
+    width: 80%;
+    padding: 0.625rem;
+    margin-bottom: 0.9375rem;
+    border: 0.0625rem solid #ccc;
+
+    box-sizing: border-box;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-add-address-button, .ch-checkout-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+
+    padding: 0.625rem 1.25rem;
+    cursor: pointer;
+    margin-right: 0.625rem;
+    font-family: "Roboto Condensed", sans-serif;
+  }
+  
+  .ch-add-address-button:hover, .ch-checkout-button:hover {
+    background-color: #0056b3;
+  }
+  @media (max-width: 780px) {
+    .checkout-title {
+        font-size: 2.5rem;
+    }
+
+    .ch-order-preview h3 {
+        font-size: 1.125rem;
+    }
+
+    .ch-total-price {
+        font-size: 1rem;
+    }
+
+    .ch-address-forms input[type='text'] {
+        flex: 1 1 calc(100% - 1.25rem);
+    }
+
+    .ch-add-address-button, .ch-checkout-button {
+        padding: 0.625rem 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .checkout-title {
+        font-size: 2rem;
+    }
+
+    .ch-order-preview h3 {
+        font-size: 1rem;
+    }
+
+    .ch-item-name {
+        font-size: 0.875rem;
+    }
+
+    .ch-item-quantity, .ch-item-price {
+        font-size: 0.75rem;
+    }
+
+    .ch-total-price {
+        font-size: 0.875rem;
+    }
+
+    .ch-address-forms input[type='text'] {
+        flex: 1 1 calc(100% - 1.25rem);
+    }
+
+    .ch-add-address-button, .ch-checkout-button {
+        font-size: 1rem;
+        padding: 0.625rem;
+    }
+}

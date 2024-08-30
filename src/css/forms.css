@@ -1,0 +1,216 @@
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 300;
+  }
+  
+  
+  .popup-inner {
+    background-color: #fff; 
+    padding: 1.25rem; 
+    box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.3); 
+    position: relative;
+    width: 70vw;
+    height: 87vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+overflow: scroll;
+overflow-x: hidden;
+  }
+
+  .popup-inner h1{
+    margin-top: 0;
+  }
+  
+  
+  .close-btn {
+    position: absolute;
+    top: 0.625rem; 
+    right: 0.625rem; 
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.125rem; 
+    color: #333;
+  }
+  
+  
+  .leavemess-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .leavemess-form2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  .lm-input {
+
+  }
+  
+  .big{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+  }
+
+  
+  button[type="submit"] {
+    background-color: #007bff; 
+    color: #fff;
+    border: none;
+    padding: 0.625rem 1.25rem; 
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; 
+  }
+  
+  .input-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 1rem;
+  }
+
+  .input-container label{
+    width: 100%;
+    transition: all 0.5s ease-in-out;
+    
+    text-align: left;
+  }
+
+  .input-container input {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #a0a0a042;
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 20vw;   
+  }
+  .input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0066ff;
+  }
+
+  .input-container textarea {
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #a0a0a042;
+    padding: 0.5rem;
+    height: 1.5rem;
+    width: 20vw;   
+    resize: none;
+  }
+  .input-container textarea:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0066ff;
+  }
+
+  .input-container select{
+    border: 0;
+    border-bottom: 1px solid #555;
+    background: transparent;
+    width: 100%;
+    font-size: 1rem;
+    background-color: #a0a0a042;
+    padding: 0.5rem;
+    height: 100%;
+    width: 100%;   
+    resize: none;
+  }
+
+
+
+  .input-container select:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid #0066ff;
+  }
+  
+   select>option{
+    border: none;
+    border-radius: none;
+  }
+  .big input{
+    width: 98%;
+  }
+
+  .mbig{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 7;
+    grid-row-end: 10;
+  }
+
+  .mbig textarea{
+    width: 98%;
+    height: 5rem;
+  }
+
+  .sbig{
+    grid-column-start: 1;
+    grid-column-end: 2
+  }
+
+  .ibig{
+    height: 3rem;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end: 4;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+  .ibig img{
+    margin-top: 1.8rem;
+    width: 85%;
+    object-fit: cover;
+  }
+  @media (max-width: 977px) and (min-width: 598px) {
+    .leavemess-form2 {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 598px) {
+    .popup-inner {
+        width: 100vw;
+        max-height: 90vh;
+    }
+    
+    .leavemess-form2 {
+        grid-template-columns: 1fr;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .big input,
+    .mbig textarea {
+        width: 100%;
+    }
+}
